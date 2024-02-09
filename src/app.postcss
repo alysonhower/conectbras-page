@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+html, body { @apply h-full; }
+body {
+	background-image:
+		radial-gradient(at 97% 96%, hsla(200,100%,46%,0.2) 0px, transparent 50%),
+		radial-gradient(at 49% 0%, hsla(79,100%,47%,0.2) 0px, transparent 50%),
+		radial-gradient(at 0% 100%, hsla(54,100%,57%,0.2) 0px, transparent 50%),
+		radial-gradient(at 0% 0%, hsla(200,100%,46%,0.2) 0px, transparent 50%),
+		radial-gradient(at 51% 100%, hsla(79,100%,47%,0.2) 0px, transparent 50%),
+		radial-gradient(at 100% 0%, hsla(54,100%,57%,0.2) 0px, transparent 50%);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+@font-face {
+	/* Reference name */
+	font-family: 'Roboto';
+	/* For multiple files use commas, ex: url(), url(), ... */
+	src: url('/fonts/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf');
+}
+	
+:root [data-theme='conectbras'] {
+    --theme-font-family-base: 'Roboto', sans-serif;
+    --theme-font-family-heading: 'Roboto', sans-serif;
+}
